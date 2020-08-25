@@ -11,11 +11,23 @@
 
 .sidebarChat__info {
     margin-left: 15px;
+    width: 100%;
 }
 
-.sidebarChat__info>h2 {
+.sidebarChat__header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarChat__timestamp {
+    color: gray;
+    font-size: 12px;
+}
+
+.sidebarChat__info .sidebarChat__header>h2 {
     font-size: 16px;
     margin-bottom: 5px;
+    flex: 1;
 }
 
 .sidebarChat__info>p {
