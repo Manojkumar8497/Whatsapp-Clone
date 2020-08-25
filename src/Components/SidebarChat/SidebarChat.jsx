@@ -4,6 +4,8 @@ import { Avatar } from "@material-ui/core";
 import formatDate from "./../../Utils/formatDate";
 // Database
 import db from "./../../firebase";
+// State
+import { useStateValue } from "./../../Store/StateProvider";
 // CSS
 import "./SidebarChat.css";
 import { useHistory } from "react-router-dom";
@@ -11,6 +13,7 @@ import { useHistory } from "react-router-dom";
 function SidebarChat({ isNewChat, room }) {
   const id = room?.id;
   const [messages, setMessages] = useState([]);
+  const [{ user }, dispatch] = useStateValue();
   // Histroy
   const history = useHistory();
   // Getting the message
@@ -35,6 +38,7 @@ function SidebarChat({ isNewChat, room }) {
       db.collection("rooms").add({
         name: roomName,
         imageUrl: `https://avatars.dicebear.com/api/human/${roomName}.svg`,
+        creatorId: user.uid,
       });
     }
   };

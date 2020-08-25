@@ -63,6 +63,7 @@ function Chat() {
     db.collection("rooms").doc(chatId).collection("messages").add({
       message,
       name: user.displayName,
+      userId: user.uid,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setMessage("");

@@ -29,7 +29,7 @@ function Login() {
           alt=""
         />
         <div className="login__text">
-          <h1>Sign in to WhatsApp</h1>
+          <h1>Sign in to WhatsApp Clone</h1>
         </div>
         <Button onClick={signIn}>Sign In with Google</Button>
       </div>

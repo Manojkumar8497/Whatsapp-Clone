@@ -17,11 +17,13 @@
 .sidebarChat__header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .sidebarChat__timestamp {
     color: gray;
     font-size: 12px;
+    margin-left: auto;
 }
 
 .sidebarChat__info .sidebarChat__header>h2 {
