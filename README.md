@@ -1,7 +1,7 @@
 <p align="center">
     <img src="https://github.com/Manojkumar8497/Whatsapp-Clone/blob/master/assets/img/logo.png" alt="Logo" width="400">
 
-  <h1 align="center">Netflix Clone</h1>
+  <h1 align="center">WhatsApp Clone</h1>
   <p align="center">This is a WhatsApp chat clone application, which is built by React, and firebase cloud firestore.</p>
 </p>
 
