@@ -33,7 +33,7 @@ I've used React.js as a front-end, and firebase as a back-end services for this 
 <li>After that, you need to setup .env file at the root of this react.js project folder.</li>
 </ol>
 <div class="highlight highlight-source-shell"><pre>
-<span class="pl-c"><span class="pl-c">#</span> TMDB Config</span>
+<span class="pl-c"><span class="pl-c">#</span> Firebase Config</span>
 REACT_APP_API_KEY=[xxxx]
 REACT_APP_AUTH_DOMAIN=[xxxx]
 REACT_APP_DATABASE_URL=[xxxx]
